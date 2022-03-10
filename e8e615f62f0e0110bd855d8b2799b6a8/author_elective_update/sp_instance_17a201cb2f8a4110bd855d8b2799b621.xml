@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">3d928d8b2f8a4110bd855d8b2799b6f8</sp_column>
+        <sp_widget display_value="Simple List Skeleton Load">9dc71df62f4a0110bd855d8b2799b6a6</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-09 18:21:44</sys_created_on>
+        <sys_id>17a201cb2f8a4110bd855d8b2799b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Skeleton Loading Widget" source="x_282674_skel_load">e8e615f62f0e0110bd855d8b2799b6a8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skeleton Loading Widget">e8e615f62f0e0110bd855d8b2799b6a8</sys_scope>
+        <sys_update_name>sp_instance_17a201cb2f8a4110bd855d8b2799b621</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-09 18:21:44</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=17a201cb2f8a4110bd855d8b2799b621"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Skeleton Loading Widget">e8e615f62f0e0110bd855d8b2799b6a8</application>
+        <file_path/>
+        <instance_id>c489d8e7dbdac450387021c40596190f</instance_id>
+        <instance_name>dev97071</instance_name>
+        <name>sp_instance_17a201cb2f8a4110bd855d8b2799b621</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">3d928d8b2f8a4110bd855d8b2799b6f8</sp_column><sp_widget display_value="Simple List Skeleton Load">9dc71df62f4a0110bd855d8b2799b6a6</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-03-09 18:21:44</sys_created_on><sys_id>17a201cb2f8a4110bd855d8b2799b621</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Skeleton Loading Widget" source="x_282674_skel_load">e8e615f62f0e0110bd855d8b2799b6a8</sys_package><sys_policy/><sys_scope display_value="Skeleton Loading Widget">e8e615f62f0e0110bd855d8b2799b6a8</sys_scope><sys_update_name>sp_instance_17a201cb2f8a4110bd855d8b2799b621</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-03-09 18:21:44</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=17a201cb2f8a4110bd855d8b2799b621"/></record_update>]]></payload>
+        <payload_hash>297071419</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>6ce659f62f0e0110bd855d8b2799b654</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-09 18:21:44</sys_created_on>
+        <sys_id>dfa201cb2f8a4110bd855d8b2799b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f6fea5c400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-09 18:21:44</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>1ba201cbc68a41100b117082376a7423</update_guid>
+        <update_guid_history>1ba201cbc68a41100b117082376a7423:297071419</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">86c241cb2f8a4110bd855d8b2799b6cc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-09 18:22:12</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>395cd3ed83fa4a00adb8da6b42159019</sys_id>
+        <sys_metadata>17a201cb2f8a4110bd855d8b2799b621</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Skeleton Loading Widget" source="x_282674_skel_load">e8e615f62f0e0110bd855d8b2799b6a8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Skeleton Loading Widget">e8e615f62f0e0110bd855d8b2799b6a8</sys_scope>
+        <sys_scope_delete display_value="">0b0e5b4cb75140abac435e8e7360fa21</sys_scope_delete>
+        <sys_update_name>sp_instance_17a201cb2f8a4110bd855d8b2799b621</sys_update_name>
+        <sys_update_version display_value="sp_instance_17a201cb2f8a4110bd855d8b2799b621">dfa201cb2f8a4110bd855d8b2799b623</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-09 18:22:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

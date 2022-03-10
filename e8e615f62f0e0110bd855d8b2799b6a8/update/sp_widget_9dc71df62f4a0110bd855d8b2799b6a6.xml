@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	function loadListItems() {
+		c.server.update()
+	}
+	
+	loadListItems();
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.skeletonText {
+	height: 1.2rem;
+  margin: .5em 0;
+  background-color: $panel-default-border;
+  opacity: 0%;
+  
+  animation: fade 2s infinite;
+}
+
+.skeletonText.title {
+	width: 33.33%
+}
+
+@keyframes fade {
+  from {
+    opacity: 100%;
+  }
+  
+  50% {
+    opacity: 0%;
+  }
+  
+  to {
+    opacity: 100%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>simple_list_skeleton_load</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Simple List Skeleton Load</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	function getListItems() {
+		var items = [];
+		var gr = new GlideRecord('incident');
+		gr.setLimit(5);
+		gr.addEncodedQuery('active=true');
+		gr.query();
+		
+		while (gr.next()) {
+			items.push({
+				'title': {
+					'value': gr.getValue('number'),
+					'display_value': gr.getDisplayValue('number')
+				},
+				'short_description': {
+					'value': gr.getValue('short_description'),
+					'display_value': gr.getDisplayValue('short_description')	
+				},
+				'meta': {
+					'field_name': gr.getLabel('assigned_to'),
+				  'value': gr.getValue('assigned_to'),
+					'display_value': gr.getDisplayValue('assigned_to')
+				}
+			});
+		}
+		
+		return items;
+	}
+	
+	data.isLoading = true;
+	
+	if (input) {
+		data.items = getListItems();
+		data.isLoading = false;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-09 01:15:25</sys_created_on>
+        <sys_id>9dc71df62f4a0110bd855d8b2799b6a6</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Simple List Skeleton Load</sys_name>
+        <sys_package display_value="Skeleton Loading Widget" source="x_282674_skel_load">e8e615f62f0e0110bd855d8b2799b6a8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skeleton Loading Widget">e8e615f62f0e0110bd855d8b2799b6a8</sys_scope>
+        <sys_update_name>sp_widget_9dc71df62f4a0110bd855d8b2799b6a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-09 18:23:51</sys_updated_on>
+        <template><![CDATA[<div>
+	<div class="panel panel-default">
+    <div class="panel-heading">
+    	Simple List
+    </div>
+    <ul class="list-group" ng-if="c.data.isLoading" ng-repeat="item in [].constructor(5) track by $index">
+      <li class="list-group-item">
+      	<div class="skeletonText title"></div>
+        <div class="skeletonText"></div>
+        <div class="skeletonText"></div>
+      </li>
+    </ul>
+    <ul class="list-group" ng-if="!c.data.isLoading">
+      <li class="list-group-item" ng-repeat="item in c.data.items">
+      	<div>
+          {{ item.title.display_value }}
+        </div>
+        <div>
+          {{ item.short_description.display_value }}
+        </div>
+        <div>
+          {{ item.meta.display_value }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
